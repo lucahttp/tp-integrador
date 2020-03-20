@@ -1,0 +1,17 @@
+carbono
+hidrogeno
+oxigeno
+nitrogeno
+
+fosforo
+
+
+
+
+
+
+1m	1nm	1
+
+
+
+0.000001 m
