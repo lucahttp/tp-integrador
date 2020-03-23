@@ -1,0 +1,140 @@
+users
+  Username
+  Name
+  Password
+  Location
+  ProfileType	
+
+    userLogin
+        compare Username to the database and the password
+
+    loginSuccesfully
+        create a instance of user with the profile
+
+    UserRestorePassword
+        send email to my inbox with a link that can restore password
+        
+    UserCreate
+        send request to administrator with data
+
+ProfileType
+    viewer
+      "view based on the location"
+      legacy
+        sensors
+            viewer
+    configurator
+      configurar reglas
+      $viewer
+      legacy
+        sensors
+            viewer
+    administator
+      usuarios
+        alta
+        baja
+        modificacion
+      legacy
+        users
+            administator
+      sensores
+        alta
+        baja
+        modificacion
+      legacy
+        sensors
+            administator
+      reglas
+        alta
+        baja
+        modificacion
+      legacy
+        reglas
+            administator
+    super administrator
+
+sensor
+    device-id
+    device-Name
+    device-Type 
+    device-Topic
+    Pool-ID (puede o no haber)
+    Location-ID (puede o no haber)
+
+
+    viewer
+        select (ver sensores)
+            select FROM sensores WHERE Location-ID = mylocation;
+
+    configurator
+
+        select (ver sensores)
+            select FROM sensores WHERE Location-ID = mylocation;
+  
+
+    administrator
+
+        select (ver sensores)
+            select FROM sensores *;
+            
+        delete (need ID)
+            DELETE FROM sensores WHERE device-id = 3;
+
+        create (need all values)
+            INSERT INTO sensores(<value-columns>) VALUES (<value-values>)
+
+
+
+gimanasiums
+    LocationID
+    StreetAndNumber
+
+
+
+    select pools based on the LocationID
+
+    viewer
+        select sensors according LocationID
+
+
+
+Pools
+    PoolID
+    PoolName
+    LocationID
+
+    viewer
+        select sensors according LocationID
+        
+
+
+when login do a select of username and compare with the password stored
+
+create object with the user and get the permisions from the db
+
+
+
+
+
+
+
+
+when login:
+
+    username:
+    password:
+
+    failed to login
+        restore password with email
+    login succesfully
+
+
+        (depending of the permisions show the actions corresponding with the profile)
+        1.action 1
+        2.action 2
+        3.action 3
+        4.action 4
+
+
+
+
