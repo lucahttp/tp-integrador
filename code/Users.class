@@ -1,0 +1,15 @@
+
+// Create a MyClass class
+public class Users {
+  int x;
+
+  // Create a class constructor for the MyClass class
+  public Users() {
+    x = 5;
+  }
+  public static void main(String[] args) {
+    User myObj = new Users();
+    System.out.println(User.x);
+  }
+}
+
