@@ -14,7 +14,6 @@ class User {
   public void CreateUser() {
     System.out.println("we are going to create a user");
   }
-
 }
 
 class Viewer extends User {
